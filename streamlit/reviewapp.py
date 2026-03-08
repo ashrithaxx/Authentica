@@ -5,8 +5,8 @@ import joblib
 st.set_page_config(page_title="Authentica AI", layout="centered")
 
 # Load model and vectorizer
-model = joblib.load("streamlit/authentica_model.pkl")
-vectorizer = joblib.load("streamlit/vectoriser.pkl")
+model = joblib.load("authentica_model.pkl")
+vectorizer = joblib.load("vectoriser.pkl")
 
 # Title
 st.title("Authentica")
@@ -145,3 +145,4 @@ if st.button("Analyze"):
             st.write("•", t)
     else:
         st.write("No manipulation tactics detected.")
+
