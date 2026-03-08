@@ -10,7 +10,7 @@ import os
 BASE_DIR = os.path.dirname(__file__)
 
 model = joblib.load(os.path.join(BASE_DIR, "authentica_model.pkl"))
-vectorizer = joblib.load(os.path.join(BASE_DIR, "vectoriser.pkl"))
+vectorizer = joblib.load(os.path.join(BASE_DIR, "vectorizer.pkl"))
 
 # Title
 st.title("Authentica")
@@ -149,5 +149,6 @@ if st.button("Analyze"):
             st.write("•", t)
     else:
         st.write("No manipulation tactics detected.")
+
 
 
