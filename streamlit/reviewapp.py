@@ -14,7 +14,7 @@ vectorizer = joblib.load(os.path.join(BASE_DIR, "vectorizer.pkl"))
 
 # Title
 st.title("Authentica")
-st.caption("AI system for detecting fake reviews and emotional manipulation tactics")
+st.caption("AI system for detecting potentially fake reviews and emotional manipulation tactics")
 
 st.markdown("---")
 
@@ -149,6 +149,7 @@ if st.button("Analyze"):
             st.write("•", t)
     else:
         st.write("No manipulation tactics detected.")
+
 
 
 
