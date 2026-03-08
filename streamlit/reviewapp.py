@@ -1,8 +1,8 @@
 import streamlit as st
 import joblib
 
-model = joblib.load("authentica_model.pkl")
-vectorizer = joblib.load("vectorizer.pkl")
+model = joblib.load("streamlit/authentica_model.pkl")
+vectorizer = joblib.load("streamlit/vectorizer.pkl")
 
 st.title("Authentica AI")
 
@@ -22,6 +22,7 @@ if st.button("Analyze"):
 
     st.write("Authenticity:", label)
     st.write("Confidence:", round(confidence*100,2),"%")
+
 
 
 
